@@ -19,12 +19,13 @@ $(function() {
 
         var candidateNames = $('#candidates').val().split('\n');
         var ballots = Irv.readBallots($('#ballots').val());
+        var orderedBallots = Irv.reorderBallots(ballots, candidateNames);
         var incompleteBallots = $('#incompleteBallots').is(':checked');
         var tiebreakerSecondary = $('#tiebreakerSecondary').is(":checked");
         var threshold = $('#threshold').val();
 
-        if (Irv.validateInput(candidateNames, ballots, incompleteBallots, threshold)) {
-            Irv.calculateWinner(candidateNames, ballots, tiebreakerSecondary, threshold);
+        if (Irv.validateInput(candidateNames, orderedBallots, incompleteBallots, threshold)) {
+            Irv.calculateWinner(candidateNames, orderedBallots, tiebreakerSecondary, threshold);
         }
 
         $('html, body').animate({scrollTop: $(document).height()}, 'slow');
