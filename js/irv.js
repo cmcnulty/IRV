@@ -20,6 +20,7 @@ var Irv = {
     reorderBallots: function(ballots, candidates) {
         var i, j, reorderedBallots = [], reorderedBallot = [];
         for (var i = 0; i < ballots.length; i++) {
+            reorderedBallot = [];
             for( j = 1; j <= candidates.length; j++ ) {
                 reorderedBallot.push( ballots[i].indexOf(j) + 1 );
             }
