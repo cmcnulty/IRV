@@ -23,7 +23,7 @@ var Irv = {
 			reorderedBallot.push( ballots.indexOf(i) + 1 );
 		}
 		return reorderedBallot;
-	}
+	},
 	
     validateCandidates: function(candidates) {
         if (candidates.length < 2) {
