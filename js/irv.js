@@ -17,14 +17,17 @@ var Irv = {
         return ballots;
     },
 
-	reorderBallots: function(ballots, candidates) {
-		var i, j, reorderedBallot = [];
-		for( i = 1; i <= candidates.length; i++ ) {
-			reorderedBallot.push( ballots.indexOf(i) + 1 );
-		}
-		return reorderedBallot;
-	},
-	
+    reorderBallots: function(ballots, candidates) {
+        var i, j, reorderedBallots = [], reorderedBallot = [];
+        for (var i = 0; i < ballots.length; i++) {
+            for( i = 1; i <= candidates.length; i++ ) {
+                reorderedBallot.push( ballots.indexOf(i) + 1 );
+            }
+            reorderedBallots.push(reorderedBallot);
+        }
+        return reorderedBallots;
+    },
+
     validateCandidates: function(candidates) {
         if (candidates.length < 2) {
             result.append('You didn\'t enter at least two candidates!<br />');
