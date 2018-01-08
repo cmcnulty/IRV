@@ -14,11 +14,11 @@ The code is [unit-tested](http://cmcnulty.github.io/IRV/test/) with
 was written by [Peter Grassberger](http://petergrassberger.com) aka.
 [PeterTheOne](https://twitter.com/PeterTheOne).
 
-The updates in this fork are to change the interpretation of the ballot - 
-rather than a matrix of the original ballot with the choices at the same index
-as the original ballot, this fork uses the index of your choice as the order of
-preference, and the value is the original index of the ballot.
+This fork changes the interpretation of the ballot - rather than a matrix 
+of the original ballot with the choices at the same index as the original ballot, 
+this fork uses the index of your choice as the order of preference, 
+and the value is the original index of the ballot.
 
 Code status
 -----------
-[![Build Status](https://travis-ci.org/cmcnulty/IRV.svg?branch=gh-pages)](https://travis-ci.org/cmcnulty/IRV)
+[![Build Status](https://travis-ci.org/cmcnulty/IRV.svg?branch=master)](https://travis-ci.org/cmcnulty/IRV)
