@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/PeterTheOne/IRV.git"
+    "url": "git://github.com/cmcnulty/IRV.git"
   },
   "author": "Peter Grassberger aka. PeterTheOne",
   "license": "MIT",
