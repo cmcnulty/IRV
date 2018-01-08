@@ -71,18 +71,20 @@
                         Please enter one ballot per line. A ballot consists of
                         ranking numbers <code>1 2 3 4 ...</code> in a row separated
                         by a comma <code>,</code>. A ballot has the same amount
-                        of ranking numbers as there are candidates. The numbers are
-                        in the same order as the candidates in the candidates list, 
-                        the first number is the rank of the first candidate of the 
-                        candidate list on this ballot, the second number is the rank 
-                        of the second candidate and so on.
-                        Spaces are ignored. Incomplete ballots can be created by
-                        using <code>0</code> as a placeholder or leaving the
-                        position empty like this <code>1, 0, 2, , 3</code>.
+                        of ranking numbers as there are candidates. 
+                        
+                        The ballots are entered in the order of preference, with your 
+                        highest ranked choice first on the list, second choice listed third, etc.
+                        All choices that you don't want to rank can be left blank.
                     </p>
                     <div class="col-md-4">
-                        <p>Example</p>
-                        <pre>3, 2, 1<br />3, 2, 1<br />1, 2, 3<br />3, 1, 2<br />2, 3, 1<br />1, 2, 3</pre>
+                        <p>Example for the following ballot:</p>
+                        <pre>Chocolate<br />Strawberry<br />Vanilla</pre>
+                        <pre>3, 2, 1<br />2, 1, 3<br />1</pre>
+                        <p>In this example, the first ballot likes Vanilla best and Chocolate least. 
+                            The second ballot likes Strawberry best and Vanilla least.
+                            The third ballot only likes Chocolate and doesn't state a preference for the other two items.
+                        </p>
                     </div>
                     <div class="col-md-8">
                         <label for="ballots">Ballots</label>
